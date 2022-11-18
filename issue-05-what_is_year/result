@@ -1,0 +1,13 @@
+============================= test session starts =============================
+platform win32 -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1 -- C:\Users\anny5\anaconda3\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\anny5\pycharm_projects\aaa-python-task9\aaa-python-task9\issue-05-what_is_year
+plugins: dash-1.18.1, cov-4.0.0
+collecting ... collected 4 items
+
+test_what_is_year_now.py::test_can_read_dmy_with_dots PASSED             [ 25%]
+test_what_is_year_now.py::test_can_read_ymd_with_dashes PASSED           [ 50%]
+test_what_is_year_now.py::test_cant_open_wrong_file PASSED               [ 75%]
+test_what_is_year_now.py::test_can_detect_wrong_format PASSED            [100%]
+
+============================== 4 passed in 0.11s ==============================

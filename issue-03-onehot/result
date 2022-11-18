@@ -1,0 +1,15 @@
+test_can_detect_noniterable_object (test_onehot.TestOneHot)
+Can onehot detect noniterable object? ... ok
+test_can_detect_wrong_answer (test_onehot.TestOneHot)
+Can onehot detect a wrong answer? ... ok
+test_can_transform (test_onehot.TestOneHot)
+Can onehot transform list of data correctly? ... ok
+test_can_transform_one_object (test_onehot.TestOneHot)
+Can onehot transform list of one component? ... ok
+test_cant_work_without_arguments (test_onehot.TestOneHot)
+Can onehot work without argument? ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+OK
