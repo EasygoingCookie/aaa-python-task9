@@ -3,10 +3,10 @@ import unittest
 
 
 class TestOneHot(unittest.TestCase):
-    '''Class for testing function fit_transform from one_hot_encoder.py'''
+    """Class for testing function fit_transform from one_hot_encoder.py"""
 
     def test_can_transform(self):
-        '''Can onehot transform list of data correctly?'''
+        """Can onehot transform list of data correctly?"""
         cities = ['Moscow', 'Ufa', 'Ufa', 'Moscow', 'London']
         expected = [
             ('Moscow', [0, 0, 1]),
@@ -19,7 +19,7 @@ class TestOneHot(unittest.TestCase):
         self.assertEqual(input, expected)
 
     def test_can_detect_wrong_answer(self):
-        '''Can onehot detect a wrong answer?'''
+        """Can onehot detect a wrong answer?"""
         cities = ['Moscow', 'Ufa', 'Ufa', 'Moscow', 'London', 'Paris']
         _ = [
             ('Moscow', [0, 0, 1]),
@@ -32,13 +32,13 @@ class TestOneHot(unittest.TestCase):
         self.assertNotIn(('Moscow', [1, 0, 0]), input)
 
     def test_can_detect_noniterable_object(self):
-        '''Can onehot detect noniterable object?'''
+        """Can onehot detect noniterable object?"""
         number = 42
         with self.assertRaises(TypeError):
             fit_transform(number)
 
     def test_can_transform_one_object(self):
-        '''Can onehot transform list of one component?'''
+        """Can onehot transform list of one component?"""
         cities = ['Moscow']
         expected = [
             ('Moscow', [1]),
@@ -47,6 +47,6 @@ class TestOneHot(unittest.TestCase):
         self.assertEqual(input, expected)
 
     def test_cant_work_without_arguments(self):
-        '''Can onehot work without argument?'''
+        """Can onehot work without argument?"""
         with self.assertRaises(TypeError):
             fit_transform()

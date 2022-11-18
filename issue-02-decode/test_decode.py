@@ -10,6 +10,6 @@ import pytest
         ('....- ..---', '42')
     ]
 )
-def test_morse_can_decode(test_input: str, expected):
-    '''Checking: func morse decodes a morse password to the text correctly'''
+def test_morse_can_decode(test_input: str, expected: str):
+    """Checking: func morse decodes a morse password to the text correctly"""
     assert decode(test_input) == expected
